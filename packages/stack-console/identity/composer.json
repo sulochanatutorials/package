@@ -1,0 +1,23 @@
+{
+    "name": "stack-console/identity",
+    "description": "Identity module package for Stack Console 3.0",
+    "type": "library",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "StackConsole\\Identity\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "StackConsole\\Identity\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "StackConsole\\Identity\\IdentityServiceProvider"
+            ]
+        }
+    }
+}
